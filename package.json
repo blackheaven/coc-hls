@@ -1,6 +1,6 @@
 {
   "name": "coc-hls",
-  "version": "0.0.0-development",
+  "version": "0.0.1",
   "description": "haskell-language-server coc.nvim extension",
   "author": "Gautier DI FOLCO <gautier.difolco@gmail.com>",
   "license": "MIT",
