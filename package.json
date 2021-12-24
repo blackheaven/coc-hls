@@ -55,6 +55,48 @@
         "command": "coc-hls.Command",
         "title": "coc-hls command title"
       }
+    ],
+    "rootPatterns": [
+      {
+        "filetype": "hs",
+        "patterns": [
+          ".stack.yaml",
+          ".hie-bios",
+          "BUILD.bazel",
+          "cabal.config",
+          "package.yaml"
+        ]
+      },
+      {
+        "filetype": "lhs",
+        "patterns": [
+          ".stack.yaml",
+          ".hie-bios",
+          "BUILD.bazel",
+          "cabal.config",
+          "package.yaml"
+        ]
+      },
+      {
+        "filetype": "haskell",
+        "patterns": [
+          ".stack.yaml",
+          ".hie-bios",
+          "BUILD.bazel",
+          "cabal.config",
+          "package.yaml"
+        ]
+      },
+      {
+        "filetype": "haskell.spec",
+        "patterns": [
+          ".stack.yaml",
+          ".hie-bios",
+          "BUILD.bazel",
+          "cabal.config",
+          "package.yaml"
+        ]
+      }
     ]
   }
 }
