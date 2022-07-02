@@ -1,4 +1,4 @@
-import { ExtensionContext, services, LanguageClient } from 'coc.nvim'
+import { ExtensionContext, services, workspace, LanguageClient } from 'coc.nvim';
 
 export async function activate(context: ExtensionContext): Promise<void> {
   const serverOptions = {
@@ -7,6 +7,7 @@ export async function activate(context: ExtensionContext): Promise<void> {
   };
   const clientOptions = {
     documentSelector: ['hs', 'lhs', 'haskell', 'haskell.spec'],
+    initializationOptions: workspace.getConfiguration().get('hls'),
   };
   const client = new LanguageClient(
     'coc-hls', // the id
@@ -14,5 +15,5 @@ export async function activate(context: ExtensionContext): Promise<void> {
     serverOptions,
     clientOptions
   );
-  context.subscriptions.push(services.registLanguageClient(client))
+  context.subscriptions.push(services.registLanguageClient(client));
 }

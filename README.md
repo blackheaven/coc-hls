@@ -6,6 +6,16 @@ haskell-language-server coc.nvim extension
 
 `:CocInstall coc-hls`
 
+## Configure
+
+```
+{
+  "hls": {
+    ...
+  }
+}
+```
+
 ## License
 
 MIT
